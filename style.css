@@ -158,11 +158,62 @@ nav {
   margin-bottom: 10px;
 }
 
-/* Skills */
-#skills ul {
-  padding-left: 20px;
-  list-style: disc;
+/* Skills Section */
+#skills {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin: 50px auto;
+  max-width: 1000px;
 }
+
+#skills h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #1d3557;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#skills li {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-left: 5px solid #1d72b8;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+#skills li:hover {
+  transform: translateX(5px);
+  background-color: #eef6ff;
+  border-left-color: #155a8a;
+}
+
+/* Optional fade-in animation for section */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 #testimonials blockquote {
   font-style: italic;
