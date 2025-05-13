@@ -164,6 +164,55 @@ nav {
   list-style: disc;
 }
 
+#testimonials blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 700px;
+  border-left: 4px solid #1d72b8;
+  padding-left: 15px;
+}
+
+#services ul, #skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#services ul li::before {
+  content: "✅ ";
+  color: green;
+}
+
+#social a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #1d72b8;
+}
+
+#social a:hover {
+  text-decoration: underline;
+}
+
+#resume .btn, #cta .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #1d72b8;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#resume .btn:hover, #cta .btn:hover {
+  background-color: #155a8a;
+}
+
+#cta {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
 /* Contact Form */
 form {
   background: #fff;
