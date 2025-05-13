@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of Kevin Owino Odhiambo - Software Engineer, Developer & Tech Entrepreneur"/>
+  <title>Kevin Owino Odhiambo | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Kevin Odhiambo</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <button class="mode-toggle" id="modeToggle">🌙</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="fade-in" id="hero">
+    <h1>Kevin Owino Odhiambo</h1>
+    <p>Software Engineer | Tech Entrepreneur | Digital Solutions Builder</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="fade-in" id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+	    <img src="images/profile.jpg" alt="Kevin Odhiambo" class="profile-pic"/>
+	    <p>I’m a Software Engineer and Tech Entrepreneur based in Siaya, Kenya.
+	    With a strong background in full-stack development, I design and build impactful digital solutions to solve real-world problems. I’m the founder of <strong>Coding Hub</strong>, a tech company that provides software development, WiFi/CCTV installation, and IT support services across Kenya.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="fade-in" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>ElimuConnect App</h3>
+      <p>A cross-platform educational app for rural students with digital books, past papers, and Q&A forums. Built using Flutter and Firebase.</p>
+      <a href="https://elimuconnect-e0858.web.app" target="_blank">🔗 Visit ElimuConnect</a>
+    </div>
+
+    <div class="project">
+      <h3>PhoneFinder App</h3>
+      <p>An app that locates lost phones using GPS, remote sirens, and data wipe features. Built using Flutter, Firebase, and Android Studio.</p>
+    </div>
+
+    <div class="project">
+      <h3>School Management System</h3>
+      <p>JavaFX desktop app with FXML for managing student records, exams, attendance, and roles for admins, teachers, and students.</p>
+      <a href="https://school-management-system-df584.web.app/" target="_blank">🔗 Try School Management System</a>
+    </div>
+
+    <div class="project">
+      <h3>SACCO Management System</h3>
+      <p>A financial system designed for SACCOs to manage member savings, loans, and transactions. Developed in Java/PHP with MySQL.</p>
+    </div>
+
+    <div class="project">
+      <h3>Uranga CBO Website</h3>
+      <p>A website for a community-based organization. Designed and deployed on TurboHost with user-friendly UI and updates section.</p>
+      <a href="https://urangacbogirls.org" target="_blank">🔗 Visit Uranga CBO Website</a>
+    </div>
+
+    <div class="project">
+      <h3>Coding Hub Website</h3>
+      <p>The company site for Coding Hub showcasing services like development, branding, and network installation. Based in Siaya Town.</p>
+      <a href="https://codingh.xyz.com" target="_blank">🔗 Visit Coding Hub</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="fade-in" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: C, C++, Java, Python, JavaScript, Dart</li>
+      <li>Frameworks: Flutter, ReactJS, JavaFX</li>
+      <li>Databases: Firebase Firestore, MongoDB, MySQL, SQLite</li>
+      <li>Tools: GitHub, Android Studio, VS Code, Ubuntu Terminal</li>
+      <li>Other: SEO, Hosting, CCTV/WiFi Setup</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="fade-in" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p>You can also reach me directly:</p>
+    <p>Email: <a href="mailto:manodhiambo@gmail.com">manodhiambo@gmail.com</a></p>
+    <p>Phone: <a href="tel:+254703445756">+254 703 445 756</a></p>
+    <p>GitHub: <a href="https://github.com/manodhiambo" target="_blank">github.com/manodhiambo</a></p>
+    <p>Location: Maria House, Siaya Town, Kenya</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kevin Owino Odhiambo. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile nav toggle
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" title="Back to Top">↑</button>
+  <script defer src="script.js"></script>
+
+</body>
+</html>
